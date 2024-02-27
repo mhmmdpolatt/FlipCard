@@ -1,0 +1,146 @@
+/* html,body{
+    box-sizing: border-box;
+    background-color: #666;
+}
+
+#grid{
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;    
+    padding: 80px;
+
+    
+  
+    
+}
+
+img{
+    margin: 3px;
+
+    border: 1px solid black;
+    width: 100px;
+    display: block;
+    height: auto;
+
+}
+
+#reset{
+    position: absolute;
+    bottom: 0;
+    background-color: #463e3e;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 18px;
+    margin-left: 25%;
+    cursor: pointer;
+
+
+
+
+
+
+}
+#reset:hover{
+    opacity: 0.8;
+    color: white;
+    padding: 18px;
+    transition: 0.8s;
+}
+.scoreBoard{
+    background-color: white;
+    padding: 15px;
+    width: 30vh;
+    border-radius: 18px;
+    display: flex;
+    gap: 3px;
+    text-align: center;
+
+
+}
+
+
+.rotate {
+    transition: transform 0.5s ease;
+  }
+  
+  .rotate.rotate180 {
+    transform: rotate(180deg);
+  }
+  h2{
+    text-align: center;
+
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  } */
+
+  .container {
+    max-width: 500px;
+    height: 100vh;
+
+
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px; /* Butonun altında boşluk bırakmak için */
+    color: #DDA8B5;
+
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #DDA8B5;
+    padding: 25px;
+
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #DDA8B5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+    border-radius: 12px;
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+img {
+    max-width: 75%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s ease; /* Dönme efekti için geçiş efekti ekle */
+    border: 1px solid black;
+
+}
+
+img.rotated {
+    transform: rotate(360deg); /* Dönme efekti */
+}
+
+.scoreBoard{
+    margin-bottom: 18px;
+    background-color: #DDA8B5;
+    color: #4D2A4F;
+    padding: 18px;
+    border-radius: 12px;
+
+}
+body{
+    background-color: #29102E;
+
+}
